@@ -1,6 +1,8 @@
 *{
     font-family: 'Roboto', sans-serif;;
 }
+
+/*Header*/
 .header, .hero{
     display: flex;
     justify-content: center;
@@ -29,6 +31,8 @@ a:link{
     flex: 1 1 auto;
 }
 
+/*Hero*/
+
 .hero{
     display: flex;
     gap: 25px;
@@ -39,19 +43,21 @@ a:link{
 }
 
 img.displayed{
-    width: 610px;
+    width: 100%;
     height: auto;
 }
 
 #extra-bold{
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8
+    color: #f9faf8;
+    padding-bottom: 10px;
 }
 
 #secondary{
     font-size: 18px;
     color: #e5e7eb;
+    padding-bottom: 10px;
 }
 
 .button{
@@ -62,6 +68,8 @@ img.displayed{
     border-radius: 15px;
     border: none;
 }
+
+/*Info section*/
 
 .info-header{
     background-color: white;
@@ -84,19 +92,23 @@ img.displayed{
 .category-one, .category-two, .category-three, .category-four{
     flex: 1 1 auto;
     padding: 25px;
+    text-align: center;
 }
 
 img.categorized{
     width: 100%;
     height: 250px;
+    border-radius: 15px;
+    border-color: #3882f6;
+    border-style: solid;
+    border-width: medium;
+
 }
 
 /*Quote Section*/
 .quote-section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #e5e7eb;
     padding: 160px;
 }
@@ -106,13 +118,52 @@ img.categorized{
     font-style: italic;
     color: #1f2937;
     font-weight: lighter;
+    align-items: flex-start;
 }
 
 .quote-author{
     flex: 1 1 auto;
-
+    text-align: right;
+    font-weight:900;
+    align-items: flex-end;
 }
 
+/*CTA*/
+
+.cta{
+    background-color: #ffffff;
+    padding: 50px 155px 50px 155px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    padding: 25px;
+    gap: 45px;
+    border-radius: 15px;
+}
+
+.button-cta{
+    border-color: #f9f9f9;
+    border-style: solid;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+}
+
+.left-cta{
+    color: #e5e7eb;
+}
+
+#cta-itistime{
+    font-weight: 900;
+    color: #ffffff;
+    font-size: larger;
+}
 /*Footer*/
 .footer{
     display: flex;
